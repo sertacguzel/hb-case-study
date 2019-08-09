@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+    <test name="Login and Update Profile Test" annotations="JDK" preserve-order="true">
+        <parameter name="browser_name" value="chrome"/>
+        <parameter name="version" value="67.0.3396.99"/>
+        <classes>
+            <class name="com.hepsiburada.test.TestRunner" />
+        </classes>
+    </test>
+
+</suite>
